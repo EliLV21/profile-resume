@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import HomePage from './components/pages/home/home';
 import { UserNameContext } from './components/shared/context';
 import ParticlesView from './components/shared/particles/particles';
-import ProjectsPage from './components/pages/projects/page';
+import PortfolioPage from './components/pages/portfolio/page';
 
 export interface DefectValue {
   name: string;
@@ -40,7 +40,7 @@ export default function Home() {
             <Suspense fallback={<div>Loading...</div>}>
               <Routes>
                 <Route path={`${isProd ? '/profile-resume' : '/'}`} element={<HomePage />} />
-                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/Portfolio" element={<PortfolioPage />} />
               </Routes>
             </Suspense>
           </Router>
