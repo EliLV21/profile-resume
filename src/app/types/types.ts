@@ -7,4 +7,4 @@ export interface Project {
   repo?: string;
 }
 
-export type ProjectInfo = Record<string, any>;
+export type ProjectInfo = Record<string, unknown>;

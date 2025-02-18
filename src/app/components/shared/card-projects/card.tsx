@@ -1,6 +1,6 @@
 import { Project } from '@/app/types/types';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Label } from '@radix-ui/react-label';
+import Image from 'next/image';
 
 interface CardProps {
   project: Project;
@@ -8,7 +8,7 @@ interface CardProps {
   length: number;
 }
 
-export const CardProject: React.FC<CardProps> = ({ project, key, length }) => {
+export const CardProject: React.FC<CardProps> = ({ project, key }) => {
   const { name, description, title, image, url, repo } = project;
 
   return (
@@ -23,7 +23,7 @@ export const CardProject: React.FC<CardProps> = ({ project, key, length }) => {
         </CardHeader>
         <CardContent className="space-y-2">
           {image && (
-            <img
+            <Image
               src={image}
               alt={name}
               width={400}
