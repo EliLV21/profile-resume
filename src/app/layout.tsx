@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import { BoardProvider } from '@/context/board-context/BoardContext';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -29,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} h-screen antialiased container bg-[#a1a1aa] md:max-w-screen-xl mx-auto z-10`}
       >
-        <BoardProvider>{children}</BoardProvider>
+        {children}
       </body>
     </html>
   );

@@ -7,4 +7,5 @@ export interface Project {
   repo?: string;
 }
 
-export type ProjectInfo = Record<string, unknown>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type ProjectInfo = Record<string, any>;

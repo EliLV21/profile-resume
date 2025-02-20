@@ -27,9 +27,10 @@ const PortfolioPage: React.FC = ({}) => {
               key={index}
               value={key}
             >
-              {typedPortfolioInfo[key].map((project: Project, idx: number) => (
-                <CardProject key={idx} project={project} length={4} />
-              ))}
+              {Array.isArray(typedPortfolioInfo[key]) &&
+                (typedPortfolioInfo[key] as Project[]).map((project: Project, idx: number) => (
+                  <CardProject key={idx} project={project} length={4} />
+                ))}
             </TabsContent>
           ))}
         </Tabs>
