@@ -1,10 +1,11 @@
+import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { projectInfo } from '@/assets/data/projects';
 import { Project, ProjectInfo } from '@/app/types/types';
 import { CardProject } from '../../shared/card-projects/card';
 import { LogoIcon } from '../../shared/logo-resume/logo';
 
-const PortfolioPage: React.FC = ({}) => {
+const PortfolioPage: React.FC = () => {
   const typedPortfolioInfo: ProjectInfo = projectInfo[0];
   const defaultTabKey = Object.keys(typedPortfolioInfo)[0];
 
