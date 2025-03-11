@@ -7,6 +7,7 @@ import { LogoIcon } from '../../shared/logo-resume/logo';
 
 const PortfolioPage: React.FC = () => {
   const typedPortfolioInfo: ProjectInfo = projectInfo[0];
+
   const defaultTabKey = Object.keys(typedPortfolioInfo)[0];
 
   return (
