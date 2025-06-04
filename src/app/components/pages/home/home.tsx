@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Marquee from '@/components/ui/marquee';
 import Name from '@/assets/name.svg';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
 import { LogoIcon } from '../../shared/logo-resume/logo';
 import { Images } from '@/assets/index';
 import { StaticImageData } from 'next/image';
@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
                   My first Portfolio &#9829;
                 </a>
                 <Button className="w-[100px]">
-                  <Link to="/Portfolio">Portfolio</Link>
+                  <Link href="/portfolio">Portfolio</Link>
                 </Button>
                 <Button className="w-[100px]">
                   <a
