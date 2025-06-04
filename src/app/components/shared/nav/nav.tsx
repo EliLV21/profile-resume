@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ContactMe } from '../contact/contact';
 import { useState } from 'react';
 import { Separator } from '@/components/ui/separator';
@@ -13,32 +13,32 @@ const NavBar = () => {
       <nav className="col-span-3 inline-block">
         <ul className="nav flex flex-row">
           <li className="nav-item">
-            <Link className="nav-link" to={`${isProd ? '/profile-resume' : '/'}`}>
+            <Link className="nav-link" href={`${isProd ? '/profile-resume' : '/'}`}>
               Home
             </Link>
           </li>
           <Separator orientation="vertical" />
           <li className="nav-item ml-[1.25rem]">
-            <Link className="nav-link" to="/board">
+            <Link className="nav-link" href="/board">
               Board
             </Link>
           </li>
           <Separator orientation="vertical" />
           <li className="nav-item ml-[1.25rem]">
-            <Link className="nav-link" to="/notes">
+            <Link className="nav-link" href="/notes">
               Notes
             </Link>
           </li>
           <Separator orientation="vertical" />
           <li className="nav-item ml-[1.25rem]">
-            <Link className="nav-link" to="/calculator">
+            <Link className="nav-link" href="/calculator">
               Calculator
             </Link>
           </li>
         </ul>
       </nav>
       <div className="col-span-2 flex justify-center items-center">
-        <Link to="https://github.com/EliLV21/profile-resume" className="btn btn-primary hover:underline">
+        <Link href="https://github.com/EliLV21/profile-resume" className="btn btn-primary hover:underline">
           https://github.com/EliLV21/profile-resume
         </Link>
       </div>
