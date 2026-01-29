@@ -16,9 +16,9 @@ const PortfolioPage: React.FC = () => {
   const defaultTabKey = Object.keys(typedPortfolioInfo)[0];
 
   return (
-    <>
+    <div className="flex items-center justify-center min-h-screen relative">
       <LogoIcon />
-      <div className="container  w-[80%] z-10 absolute items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-20 md:shadow-xl">
+      <div className="container w-[80%] z-10 items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-20 md:shadow-xl">
         <Tabs defaultValue={defaultTabKey} className="w-full">
           <TabsList className="grid w-full grid-cols-3">
             {Object.keys(typedPortfolioInfo).map((key, value) => (
@@ -42,7 +42,7 @@ const PortfolioPage: React.FC = () => {
           ))}
         </Tabs>
       </div>
-    </>
+    </div>
   );
 };
 
