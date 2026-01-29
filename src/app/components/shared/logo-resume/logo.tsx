@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const LogoIcon = () => {
   const isProd = process.env.NODE_ENV === 'production';
   return (
-    <Link href={`${isProd ? '/profile-resume' : '/'}`} style={{ zIndex: 100 }} className="absolute left-[-21px] top-4">
+    <Link href={`${isProd ? '/profile-resume' : '/'}`} style={{ zIndex: 100 }} className="absolute left-4 top-4">
       <Image
         className=""
         alt="Logo"

@@ -10,9 +10,9 @@ import { StaticImageData } from 'next/image';
 
 const HomePage: React.FC = () => {
   return (
-    <>
+    <div className="flex items-center justify-center min-h-screen relative">
       <LogoIcon />
-      <div className="container z-10 absolute items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-20 md:shadow-xl">
+      <div id='home-container' className="container z-10 items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-20 md:shadow-xl">
         <div className="pt-0 h-full">
           <div className="grid grid-cols-4 h-[70%]">
             <div
@@ -71,7 +71,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
