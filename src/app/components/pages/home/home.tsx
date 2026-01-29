@@ -12,9 +12,9 @@ const HomePage: React.FC = () => {
   return (
     <>
       <LogoIcon />
-      <div className="container h-[80vh] p-8 z-10 absolute items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-20 md:shadow-xl">
-        <div className="p-[2rem] h-full">
-          <div className="grid grid-cols-4 h-[80%]">
+      <div className="container z-10 absolute items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-20 md:shadow-xl">
+        <div className="pt-0 h-full">
+          <div className="grid grid-cols-4 h-[70%]">
             <div
               className="flex flex-col items-center cursor-pointer justify-center bg-center bg-cover h-[50vh]"
               style={{
@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
               <div className=" w-full">
                 <Name />
                 <p className="flex justify-end items-center">
-                  Front end developer with almost 9 years of experience, working mainly with Javascript. Using
+                  Front end developer with almost 8 years of experience, working mainly with Javascript. Using
                   Angularjs, Vuejs and React. With a strong experience in agile methodology, as well as the ability to
                   translate business requirements into technical tasks.
                 </p>
