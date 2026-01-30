@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import logo from '@/assets/logo/EliLV.png';
 
 export const LogoIcon = () => {
   const isProd = process.env.NODE_ENV === 'production';
@@ -10,7 +11,7 @@ export const LogoIcon = () => {
         alt="Logo"
         width={200}
         height={200}
-        src="./public/logo/EliLV.png"
+        src={logo}
       />
     </Link>
   );
