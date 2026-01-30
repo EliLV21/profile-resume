@@ -9,7 +9,7 @@ export const LogoIcon = () => {
         alt="Logo"
         width={200}
         height={200}
-        src="/logo/EliLV.png"
+        src="/profile-resume/_next/static/media/logo/EliLV.png"
       />
     </Link>
   );
