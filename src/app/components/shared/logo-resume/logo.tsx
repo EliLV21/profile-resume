@@ -10,6 +10,7 @@ export const LogoIcon = () => {
         width={200}
         height={200}
         src="/logo/EliLV.png"
+
       />
     </Link>
   );
