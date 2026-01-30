@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run build && npx serve@latest out",
     "lint": "next lint",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
