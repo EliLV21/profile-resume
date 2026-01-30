@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
         <div className="pt-0 h-full">
           <div className="grid grid-cols-4 h-[70%]">
             <div
-              className="flex flex-col items-center cursor-pointer justify-center bg-center bg-cover h-[50vh]"
+              className="flex flex-col items-center cursor-pointer justify-center bg-center bg-cover h-full"
               style={{
                 backgroundImage:
                   'url(https://rfdslcnqutnamgrgitxv.supabase.co/storage/v1/object/sign/profile%20resume/personal/465554911_10231695773648964_8304312155384821212_n.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9maWxlIHJlc3VtZS9wZXJzb25hbC80NjU1NTQ5MTFfMTAyMzE2OTU3NzM2NDg5NjRfODMwNDMxMjE1NTM4NDgyMTIxMl9uLmpwZyIsImlhdCI6MTczODg3MTYwNywiZXhwIjoxNzcwNDA3NjA3fQ.37df21PKn1Q96GinjrjZcj2pPbfk7v6Rn1pgd0BqwRc)',
