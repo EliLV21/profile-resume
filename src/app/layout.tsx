@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Elizabeth React Project',
-  description: 'Elizabeth React Project',
+  title: 'Elizabeth resume',
+  description: 'Elizabeth resume',
 };
 
 export default function RootLayout({
