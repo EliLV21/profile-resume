@@ -1,43 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Marquee from '@/components/ui/marquee';
 import Name from '@/assets/name.svg';
 import { Button } from '@/components/ui/button';
-import { LogoIcon } from '../../shared/logo-resume/logo';
 import { Images } from '@/assets/index';
 import { StaticImageData } from 'next/image';
-import logoImage from '@/assets/logo/EliLV.png';
+import { LogoIcon } from '../../shared/logo-resume/logo';
 
 const HomePage: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row md:items-center md:justify-center min-h-screen relative py-4 md:py-0">
-      <div className="md:hidden flex justify-center mb-4">
-        <Link href="/" className="relative">
-          <Image
-            src={logoImage}
-            alt="Logo"
-            width={150}
-            height={150}
-            className=""
-          />
-        </Link>
-      </div>
-      <div className="hidden md:block">
-        <LogoIcon />
-      </div>
 
       {/* Home Container */}
       <div id='home-container' className="container z-10 items-center justify-center bg-opacity-60 gap-4 overflow-hidden rounded-lg border bg-background px-4 md:px-20 md:shadow-xl w-full md:w-auto mb-4 md:mb-0">
-        <div className="pt-0 h-full">
           <div className="grid grid-cols-1 md:grid-cols-4 h-auto md:h-[70%]">
-            <div
-              className="flex flex-col items-center cursor-pointer justify-center bg-center bg-cover h-[300px] md:h-full"
-              style={{
-                backgroundImage:
-                  'url(https://rfdslcnqutnamgrgitxv.supabase.co/storage/v1/object/sign/profile%20resume/personal/465554911_10231695773648964_8304312155384821212_n.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwcm9maWxlIHJlc3VtZS9wZXJzb25hbC80NjU1NTQ5MTFfMTAyMzE2OTU3NzM2NDg5NjRfODMwNDMxMjE1NTM4NDgyMTIxMl9uLmpwZyIsImlhdCI6MTczODg3MTYwNywiZXhwIjoxNzcwNDA3NjA3fQ.37df21PKn1Q96GinjrjZcj2pPbfk7v6Rn1pgd0BqwRc)',
-              }}
-            ></div>
+            <div className="order-first col-span-1 flex flex-col items-center justify-center p-4 md:items-center md:justify-center md:p-0">
+              <LogoIcon inline />
+            </div>
             <div className="col-span-1 md:col-span-3 items-center p-4 md:p-6">
               <div className="w-full">
                 <Name />
@@ -64,10 +43,16 @@ const HomePage: React.FC = () => {
                     Resume
                   </a>
                 </Button>
+                <Button className="w-full md:w-[100px]">
+                  <a
+                    href="/portfolio"
+                  >
+                    Resume
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
-        </div>
       
         <Marquee className="justify-center overflow-hidden [--duration:30s] [--gap:1rem]" pauseOnHover>
           {Images.map((data: StaticImageData, idx: number) => (
